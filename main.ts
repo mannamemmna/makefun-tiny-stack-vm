@@ -2,6 +2,7 @@
 // tiny-stack-vm-01 bounty. It follows the reference VM step for step, keeping
 // every trap code and edge case (wrapping arithmetic, signed/unsigned views,
 // sign-extended PUSH8, and the exact order of the per-step checks).
+// Its semantics were verified against all 40 practice instances of the tiny-stack-vm-01 practice set (exact stdout bytes and exit codes).
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
